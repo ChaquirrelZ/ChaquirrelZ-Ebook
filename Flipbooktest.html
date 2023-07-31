@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<title>คัมภีร์มหาชีวะ-อนุกรมวิธาน</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="toktang.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="maincontent">
+        <h1 class="topic">
+            <span style="--i:1">เลือก</span>
+            <span class="topic1" style="--i:2">สิ่ง</span>
+            <span class="topic2" style="--i:3">ที่</span>
+            <span class="topic3" style="--i:4">ต้อง</span>
+            <span class="topic4" style="--i:5">การ</span></h1><br>
+        <img src="booktn.png" class="pg1" id="pg1" onclick="flipbookopen()"><br>
+        <img src="2.png" class="pg2" id="pg2" onclick="flipbookopen2()"><br>
+        <img src="3.png" class="pg3" id="pg3" onclick="flipbookopen3()"><br>
+        <img src="4.png" class="pg4" id="pg4" onclick="flipbookopen4()"><br> 
+        <img src="5.png" class="pg5" id="pg5" onclick=""><br>
+
+
+
+
+    </div>
+    
+
+</body>
+<script>
+     let flipbook = document.getElementById('pg1');
+     let flipbook2 = document.getElementById('pg2');
+     let flipbook3 = document.getElementById('pg3');
+     let flipbook4 = document.getElementById('pg4');
+     let flipbook5 = document.getElementById('pg5');
+     function flipbookopen(){
+      flipbook.classList.remove("pg1flipclose");
+      flipbook.classList.add("pg1flip");
+      setTimeout(() => {
+        flipbook.src = "Backpage.png"
+      }, 550);
+     
+      flipbook.onclick = flipbookclose
+     }
+    
+     function flipbookclose(){
+      flipbook.classList.remove("pg1flip");
+      flipbook.src = "booktn.png"
+      flipbook.onclick = flipbookopen
+     }
+     function flipbookopen2(){
+      flipbook2.classList.add("pg2flip");
+      setTimeout(() => {
+        flipbook2.src = "Backpage.png"
+      }, 550);
+      flipbook2.onclick = flipbookclose2
+     }
+     function flipbookclose2(){
+      flipbook2.classList.remove("pg2flip");
+      flipbook2.src = "2.png"
+      flipbook2.onclick = flipbookopen2
+     }
+     function flipbookopen3(){
+      flipbook3.classList.add("pg3flip");
+      setTimeout(() => {
+        flipbook3.src = "Backpage.png"
+      }, 550);
+      flipbook3.onclick = flipbookclose3
+     }
+     function flipbookclose3(){
+      flipbook3.classList.remove("pg3flip");
+      flipbook3.src = "3.png"
+      flipbook3.onclick = flipbookopen3
+     }
+     function flipbookopen4(){
+      flipbook4.classList.add("pg4flip");
+      setTimeout(() => {
+        flipbook4.src = "Backpage.png"
+      }, 550);
+      flipbook4.onclick = flipbookclose4
+     }
+     function flipbookclose4(){
+      flipbook4.classList.remove("pg4flip");
+      flipbook4.src = "4.png"
+      flipbook4.onclick = flipbookopen4
+     }
+     function flipbookopen5(){
+      flipbook5.classList.add("pg5flip");
+      setTimeout(() => {
+        flipbook5.src = "Backpage.png"
+      }, 550);
+      flipbook5.onclick = flipbookclose5
+     }
+     function flipbookclose5(){
+      flipbook5.classList.remove("pg5flip");
+      flipbook5.src = "5.png"
+      flipbook5.onclick = flipbookopen5
+     }
+</script>

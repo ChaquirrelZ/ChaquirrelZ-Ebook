@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+<title>MY WEBSITE</title>
+<br><br>
+<div class="wrapper-main">
+    <div class="firstline" style="display: inline;">
+<button class="langbth" onclick="document.location='thmyhtml.html'">Thai</button>
+    <button class="langbthon">Eng</button></div>
+<div class="head">
+<br>
+<span class="maintitle">
+<h1 class="texttitle">CHISANUCHA THONSIRI</h1></span>
+<br>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="mywebcss.css" />
+</head>
+<body>
+
+    
+<nav class="btcontent">
+    <button title=info class="bthmain"onclick="document.location='myhtml.html'">personal info</button>
+    <button class="bth" onclick="document.location='myhtmlcon.html'">contact</button>
+    <button class="bth" onclick="document.location='myhtmlhall.html'">hall of fame</button>
+    <button class="bth" onclick="comingsoon()">etc</button>
+</nav>
+<div class="titlebar">
+<h1 class="infotitle">
+    &nbsp;&nbsp;&nbsp;&nbsp;<span style="--i:1">My</span>
+    <span style="--i:2">In</span> 
+    <span class="title1"style="--i:3">for</span> 
+    <span class="title2"style="--i:4">ma</span> 
+    <span class="title3"style="--i:5">tion</span> </h1></div>
+<div class="info">
+    <br>
+        <button class="fullpic" title="Full Picture"><i class="fa fa-search"></i></button>
+        <br>
+            <br>
+            <br>
+            <div id="picpic">
+            <button id="slidebuttonfunc1" class="slidebutton1" onclick="picslide3()"><i class="arrow left"></i></button>
+            <img id="profilepicsrc" class="profilepic" src="https://i.postimg.cc/Px25BBmq/1103703803735-1843276a3b7.jpg"></img>
+            <button id="slidebuttonfunc2" class="slidebutton2" onclick="picslide2()"><i class="arrow right"></i></button>
+        </div>
+            <br>
+            <br>
+            <p class="infoparag" id="parano1">
+            Name:<span class="texthi">Chisanucha Thonsiri</span><br>
+            Nickname:<span class="texthi">Kram</span> <Br>
+            Birthday:<span class="texthi">18th June 2004</span> <br>
+            Age:<span class="texthi">18 yrs</span> <br>
+            Tel:<span class="texthi">0612238933</span><br>
+            Hobbies:<span class="texthi">Coding,Coding,Coding and Coding too!</span><br>
+            Toeic score:<span class="texthi">665</span><br>
+            TEST<br></p>
+            
+    
+        </p>
+        <h1 id="topic1" class="topicmain1" onclick="topic1selected()">My Info</h1>
+            <h1 id="topic2" class="topicnotmain2" onclick="topic2selected()">Story</h1>
+            <h1 id="topic3" class="topicnotmain3" onclick="topic3selected()">Facts</h1>
+            <h1 id="topic4" class="topicnotmain4" onclick="topic4selected()">Skill</h1>
+            <img class="decopic1" style="display: none;" src="https://static.vecteezy.com/system/resources/previews/012/893/834/original/squirrel-transparent-background-free-png.png"></img>
+
+        <br>
+        <p class="infoparag2" id="parano2">
+            Name:<span class="texthi">Chisanucha Thonsiri</span><br>
+            Nickname:<span class="texthi">Kram</span> <Br>
+            Birthday:<span class="texthi">18th June 2004</span> <br>
+            Age:<span class="texthi">18 yrs</span> <br>
+            Tel:<span class="texthi">0612238933</span><br>
+            Hobbies:<span class="texthi">Coding,Coding,Coding and Coding too!</span><br>
+            Toeic score:<span class="texthi">665</span><br>
+            TEST pong<br>
+            
+
+    </div>
+</div>
+<br><br>
+</body>
+<script>
+    function comingsoon(){
+        alert("Coming Soon!");
+    }
+    function picslide2(){
+        document.getElementById("profilepicsrc").src = "https://i.postimg.cc/VsM2K3c9/Pics-Art-06-26-03-09-27.jpg"
+        document.getElementById("slidebuttonfunc1").onclick = picslide1
+        document.getElementById("slidebuttonfunc2").onclick = picslide3
+    }
+    function picslide3(){
+        document.getElementById("profilepicsrc").src = "https://media.istockphoto.com/id/655044490/photo/funny-animal-businessman-chipmunk-with-tie-and-glasses-on-white.jpg?s=612x612&w=0&k=20&c=TCq-16-yQbKk4cwjkk__OYCNuRL5oPhyWp7kROeSI58="
+        document.getElementById("slidebuttonfunc1").onclick = picslide2
+        document.getElementById("slidebuttonfunc2").onclick = picslide1
+    }
+    function picslide1(){
+        document.getElementById("profilepicsrc").src = "https://i.postimg.cc/Px25BBmq/1103703803735-1843276a3b7.jpg"
+        document.getElementById("slidebuttonfunc1").onclick = picslide3
+        document.getElementById("slidebuttonfunc2").onclick = picslide2
+    }
+    function topic1selected(){
+        document.getElementById("topic1").className = "topicmain1"
+        document.getElementById("topic1").innerHTML = "My Info"
+        document.getElementById("topic2").className = "topicnotmain2"
+        document.getElementById("topic2").innerHTML = "Story"
+        document.getElementById("topic3").className = "topicnotmain3"
+        document.getElementById("topic3").innerHTML = "Facts"
+        document.getElementById("topic4").className = "topicnotmain4"
+        document.getElementById("topic4").innerHTML = "Skill"
+        document.getElementById("parano2").style= "display:none;"
+    }
+    function topic2selected(){
+        document.getElementById("topic1").className = "topicnotmain1"
+        document.getElementById("topic1").innerHTML = "Info"
+        document.getElementById("topic2").className = "topicmain2"
+        document.getElementById("topic2").innerHTML = "My Story"
+        document.getElementById("topic3").className = "topicnotmain3"
+        document.getElementById("topic3").innerHTML = "Facts"
+        document.getElementById("topic4").className = "topicnotmain4"
+        document.getElementById("topic4").innerHTML = "Skill"
+        document.getElementById("parano2").style= "display:block;"
+        document.getElementsByClassName("parano1").style= "display:none;"
+    }
+    function topic3selected(){
+        document.getElementById("topic1").className = "topicnotmain1"
+        document.getElementById("topic1").innerHTML = "Info"
+        document.getElementById("topic2").className = "topicnotmain2"
+        document.getElementById("topic2").innerHTML = "Story"
+        document.getElementById("topic3").className = "topicmain3"
+        document.getElementById("topic3").innerHTML = "My Facts"
+        document.getElementById("topic4").className = "topicnotmain4"
+        document.getElementById("topic4").innerHTML = "Skill"
+        document.getElementById("parano2").style= "display:block;"
+        document.getElementsByClassName("parano1").style= "display:none;"
+    }
+    function topic4selected(){
+        document.getElementById("topic1").className = "topicnotmain1"
+        document.getElementById("topic1").innerHTML = "Info"
+        document.getElementById("topic2").className = "topicnotmain2"
+        document.getElementById("topic2").innerHTML = "Story"
+        document.getElementById("topic3").className = "topicnotmain3"
+        document.getElementById("topic3").innerHTML = "Facts"
+        document.getElementById("topic4").className = "topicmain4"
+        document.getElementById("topic4").innerHTML = "My Skill"
+        document.getElementById("parano2").style= "display:block;"
+        document.getElementsByClassName("parano1").style= "display:none;"
+    }
+</script>
