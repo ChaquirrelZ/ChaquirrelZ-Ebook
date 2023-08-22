@@ -798,3 +798,122 @@ body{
 .testcolor{
     background-color: #d7d7d786;
 }
+.popup-comingsoon{
+    background-color: #faffdc;
+    top: -590px;
+    left: 180px;
+    border-radius: 10px;
+    width: 300px;
+    height: 210px;
+    position: relative;
+    padding: 0 30px 10px;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-50%,-50%) scale(0.1);
+    z-index: 99;
+    box-shadow: 0 3px 5px black;
+    transition: transform 0.2s,top 0.4s;
+    visibility: hidden;
+}
+.popup-comingsoon-open{
+    top: -590px;
+    transform: translate(-50%,-50%) scale(0.8);
+    visibility: visible;
+}
+.popup-comingsoon h1{
+    font-size: 25px;
+    top: 65px;
+    position: relative;
+}
+.popup-comingsoon p{
+ font-size: 20px;
+    top: 55px;
+    position: relative;
+    line-height: 1.5;}
+.popup-comingsoon button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: rgb(162, 255, 162);
+    border-radius: 10px;
+    top: 45px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+.comingsooncancel{
+    height: 50px;
+    top:-165px;
+    left:175px;
+    position: relative;
+}
+.warning{
+    height: 150px;
+    top: -280px;
+    position: relative;
+}
+.comingsoon-text{
+    position: relative;
+    top: -940px;
+    left: 0px;
+    font-size: 12px;
+    background-color: rgb(251, 255, 0);
+    width: 100px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.popup-comingsoon2{
+    background-color: #faffdc;
+    top: -845px;
+    left: 180px;
+    border-radius: 10px;
+    width: 300px;
+    height: 170px;
+    position: relative;
+    padding: 0 30px 10px;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-50%,-50%) scale(0.1);
+    z-index: 99;
+    box-shadow: 0 3px 5px black;
+    transition: transform 0.2s,top 0.4s;
+    visibility: hidden;
+}
+.popup-comingsoon2-open{
+    top: -845px;
+    transform: translate(-50%,-50%) scale(0.8);
+    visibility: visible;
+}
+.popup-comingsoon2 h1{
+    font-size: 25px;
+    top: 65px;
+    position: relative;
+}
+.popup-comingsoon2 p{
+ font-size: 20px;
+    top: 55px;
+    position: relative;
+    line-height: 1.5;}
+.popup-comingsoon2 button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: rgb(162, 255, 162);
+    border-radius: 10px;
+    top: 45px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+.comingsooncancel2{
+    height: 50px;
+    top:-125px;
+    left:175px;
+    position: relative;
+}
+.warning2{
+    height: 150px;
+    top: -235px;
+    position: relative;
+}
