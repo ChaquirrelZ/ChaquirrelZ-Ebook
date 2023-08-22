@@ -1,149 +1,226 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
-<title>MY WEBSITE</title>
-<br><br>
-<div class="wrapper-main">
-    <div class="firstline" style="display: inline;">
-<button class="langbth" onclick="document.location='thmyhtml.html'">Thai</button>
-    <button class="langbthon">Eng</button></div>
-<div class="head">
-<br>
-<span class="maintitle">
-<h1 class="texttitle">CHISANUCHA THONSIRI</h1></span>
-<br>
-</div>
+<title>หน้าแรก</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="toktang.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="mywebcss.css" />
 </head>
 <body>
-
-    
-<nav class="btcontent">
-    <button title=info class="bthmain"onclick="document.location='myhtml.html'">personal info</button>
-    <button class="bth" onclick="document.location='myhtmlcon.html'">contact</button>
-    <button class="bth" onclick="document.location='myhtmlhall.html'">hall of fame</button>
-    <button class="bth" onclick="comingsoon()">etc</button>
-</nav>
-<div class="titlebar">
-<h1 class="infotitle">
-    &nbsp;&nbsp;&nbsp;&nbsp;<span style="--i:1">My</span>
-    <span style="--i:2">In</span> 
-    <span class="title1"style="--i:3">for</span> 
-    <span class="title2"style="--i:4">ma</span> 
-    <span class="title3"style="--i:5">tion</span> </h1></div>
-<div class="info">
-    <br>
-        <button class="fullpic" title="Full Picture"><i class="fa fa-search"></i></button>
-        <br>
-            <br>
-            <br>
-            <div id="picpic">
-            <button id="slidebuttonfunc1" class="slidebutton1" onclick="picslide3()"><i class="arrow left"></i></button>
-            <img id="profilepicsrc" class="profilepic" src="https://i.postimg.cc/Px25BBmq/1103703803735-1843276a3b7.jpg"></img>
-            <button id="slidebuttonfunc2" class="slidebutton2" onclick="picslide2()"><i class="arrow right"></i></button>
+    <div class="maincontent">
+        <h1 class="topic">
+            <span style="--i:1">เลือก</span>
+            <span class="topic1" style="--i:2">สิ่ง</span>
+            <span class="topic2" style="--i:3">ที่</span>
+            <span class="topic3" style="--i:4">ต้อง</span>
+            <span class="topic4" style="--i:5">การ</span></h1><br>
+            <div id="bioloble">
+        <div id="superbio" onclick="btslide()"><h1 class="txtbt">คัมภีร์มหาชีวะ</h1></div>
+        <div class="superbiosub1">
+            <button id="biobt1" title="Back" onclick="btslideback()" onmouseover=" bt1ef()" onmouseout="bt1efout()"><i class="fa fa-chevron-right"></i></button>
+            <button id="biobt2" title="Info"  onclick="openPopup()"  onmouseover=" bt2ef()" onmouseout="bt2efout()"><i class="fa fa-info-circle"></i></button>
+            <button id="biobt3" title="ดูE-Book" onclick="bioloble1popup()" onmouseover=" bt3ef()" onmouseout="bt3efout()"><i class="fa fa-book"></i></button>
+        
         </div>
-            <br>
-            <br>
-            <p class="infoparag" id="parano1">
-            Name:<span class="texthi">Chisanucha Thonsiri</span><br>
-            Nickname:<span class="texthi">Kram</span> <Br>
-            Birthday:<span class="texthi">18th June 2004</span> <br>
-            Age:<span class="texthi">18 yrs</span> <br>
-            Tel:<span class="texthi">0612238933</span><br>
-            Hobbies:<span class="texthi">Coding,Coding,Coding and Coding too!</span><br>
-            Toeic score:<span class="texthi">665</span><br>
-            TEST<br></p>
-            
+      </div>
+        <div id="popup" class="popup">
+            <img src="booktn.png">
+            <img src="X.png" class="X" onclick="closePopup()">
+            <h1>ข้อมูลของคัมภีร์มหาชีวะ</h1>
+            <p>คัมภีร์มหาชีวะเป็นสรุปในรายวิชาชีววิทยาในเนื้อหาเรื่องต่างๆเช่น อนุกรมวิธาน และคิงด้อมต่างๆของสิ่งมีชีวิต ปัจจุบันมี 4 เล่ม</p>
+            <button onclick="bioloble1popup()">ดู E-BOOK</button>
+        </div>
+        <div class="bioloble1" id="bioloble1">
+         <img src="booktn.png">
+         <h6>คัมภีร์มหาชีวะ</h6>
+         <h1>Pt.1 อนุกรมวิธาน</h1>
+         <button class="biobtn1" id="biobtn1" ><i class="fa fa-book"></i></button>
+         <div class="hitblock" onclick="document.location='Flipbooktest.html'" onmouseover="biobtnpopup1()" onmouseout="biobtnclosepopup1()"></div>
+        </div>
+        <div class="icon2" id="bioloble2">
+         <img src="booktn2.png">
+         <h6>คัมภีร์มหาชีวะ</h6>
+         <h1>Pt.2 โมเนอรา</h1>
+         <button class="biobtn2" id="biobtn2" ><i class="fa fa-book"></i></button>
+         <div class="hitblock" onclick="comingsoonpopup()" onmouseover="biobtnpopup2()" onmouseout="biobtnclosepopup2()"></div>
+        </div>
+        <div class="bioloble3" id="bioloble3">
+         <img src="booktn3.png">
+         <h6>คัมภีร์มหาชีวะ</h6>
+         <h1>Pt.3 โพรทิสตา</h1>
+         <button class="biobtn3" id="biobtn3" ><i class="fa fa-book"></i></button>
+         <div class="hitblock" onclick="comingsoonpopup()" onmouseover="biobtnpopup3()" onmouseout="biobtnclosepopup3()"></div>
+        </div>
+        <div class="bioloble4" id="bioloble4">
+         <img src="booktn4.png">
+         <h6>คัมภีร์มหาชีวะ</h6>
+         <h1>Pt.4 ฟังไจ</h1>
+         <button class="biobtn4" id="biobtn4" ><i class="fa fa-book"></i></button>
+         <div class="hitblock" onclick="comingsoonpopup()" onmouseover="biobtnpopup4()" onmouseout="biobtnclosepopup4()"></div>
+        </div>
+        <button class="cancelbutton" id="cancelbutton" onclick="cancel()">X</button>
+        <div class="popup-comingsoon" id="popup-comingsoon">
+         <h1>เนื้อหาจะมาเร็วๆนี้!</h1>
+         <p>อดใจรออีกสักหน่อย!
+         </p>
+         <a href="https://www.clearnotebooks.com/th/authors/6025681?fbclid=PAAaaXfRYzD_8X0hHXS9rAL_QqMSHMAwup9oOeJmdHz12qnzi2jxFVg5TQbTQ_aem_AUHoFYovAOP4EuEfqZqOfOgn6n3_uJQL_ZS41xCDaS1zb8Pl6-7LubG7T5nN11QV46E"><button>ดูใน Clear note</button></a>
+         <img src="X.png" class="comingsooncancel" onclick="comingsoonpopupclose()"><br>
+         <img class="warning" src="Warningsign.png">
+         
+        </div>
+        <h1 id = "comingsoon-text" class="comingsoon-text" onclick="comingsoonpopup2()">COMING SOON</h1>
+        <div class="popup-comingsoon2" id="popup-comingsoon2">
+         <h1>หนังสือใหม่จะมาเร็วๆนี้!</h1>
+         <p>อดใจรออีกสักหน่อย!
+         </p>
+         <img src="X.png" class="comingsooncancel2" onclick="comingsoonpopupclose2()"><br>
+         <img class="warning2" src="Warningsign.png">
+         
+        </div>
+      </div>
     
-        </p>
-        <h1 id="topic1" class="topicmain1" onclick="topic1selected()">My Info</h1>
-            <h1 id="topic2" class="topicnotmain2" onclick="topic2selected()">Story</h1>
-            <h1 id="topic3" class="topicnotmain3" onclick="topic3selected()">Facts</h1>
-            <h1 id="topic4" class="topicnotmain4" onclick="topic4selected()">Skill</h1>
-            <img class="decopic1" style="display: none;" src="https://static.vecteezy.com/system/resources/previews/012/893/834/original/squirrel-transparent-background-free-png.png"></img>
 
-        <br>
-        <p class="infoparag2" id="parano2">
-            Name:<span class="texthi">Chisanucha Thonsiri</span><br>
-            Nickname:<span class="texthi">Kram</span> <Br>
-            Birthday:<span class="texthi">18th June 2004</span> <br>
-            Age:<span class="texthi">18 yrs</span> <br>
-            Tel:<span class="texthi">0612238933</span><br>
-            Hobbies:<span class="texthi">Coding,Coding,Coding and Coding too!</span><br>
-            Toeic score:<span class="texthi">665</span><br>
-            TEST pong<br>
-            
-
-    </div>
-</div>
-<br><br>
 </body>
 <script>
-    function comingsoon(){
-        alert("Coming Soon!");
+    function btslide() {
+     document.getElementById('superbio').id = "superbiomove"
+     document.getElementById('superbiomove').onclick = btslideback
     }
-    function picslide2(){
-        document.getElementById("profilepicsrc").src = "https://i.postimg.cc/VsM2K3c9/Pics-Art-06-26-03-09-27.jpg"
-        document.getElementById("slidebuttonfunc1").onclick = picslide1
-        document.getElementById("slidebuttonfunc2").onclick = picslide3
+    function btslidesub() {
+     document.getElementById('btpreslide').id = "superbiomove"
+     document.getElementById('superbiomove').onclick = btslideback
     }
-    function picslide3(){
-        document.getElementById("profilepicsrc").src = "https://media.istockphoto.com/id/655044490/photo/funny-animal-businessman-chipmunk-with-tie-and-glasses-on-white.jpg?s=612x612&w=0&k=20&c=TCq-16-yQbKk4cwjkk__OYCNuRL5oPhyWp7kROeSI58="
-        document.getElementById("slidebuttonfunc1").onclick = picslide2
-        document.getElementById("slidebuttonfunc2").onclick = picslide1
-    }
-    function picslide1(){
-        document.getElementById("profilepicsrc").src = "https://i.postimg.cc/Px25BBmq/1103703803735-1843276a3b7.jpg"
-        document.getElementById("slidebuttonfunc1").onclick = picslide3
-        document.getElementById("slidebuttonfunc2").onclick = picslide2
-    }
-    function topic1selected(){
-        document.getElementById("topic1").className = "topicmain1"
-        document.getElementById("topic1").innerHTML = "My Info"
-        document.getElementById("topic2").className = "topicnotmain2"
-        document.getElementById("topic2").innerHTML = "Story"
-        document.getElementById("topic3").className = "topicnotmain3"
-        document.getElementById("topic3").innerHTML = "Facts"
-        document.getElementById("topic4").className = "topicnotmain4"
-        document.getElementById("topic4").innerHTML = "Skill"
-        document.getElementById("parano2").style= "display:none;"
-    }
-    function topic2selected(){
-        document.getElementById("topic1").className = "topicnotmain1"
-        document.getElementById("topic1").innerHTML = "Info"
-        document.getElementById("topic2").className = "topicmain2"
-        document.getElementById("topic2").innerHTML = "My Story"
-        document.getElementById("topic3").className = "topicnotmain3"
-        document.getElementById("topic3").innerHTML = "Facts"
-        document.getElementById("topic4").className = "topicnotmain4"
-        document.getElementById("topic4").innerHTML = "Skill"
-        document.getElementById("parano2").style= "display:block;"
-        document.getElementsByClassName("parano1").style= "display:none;"
-    }
-    function topic3selected(){
-        document.getElementById("topic1").className = "topicnotmain1"
-        document.getElementById("topic1").innerHTML = "Info"
-        document.getElementById("topic2").className = "topicnotmain2"
-        document.getElementById("topic2").innerHTML = "Story"
-        document.getElementById("topic3").className = "topicmain3"
-        document.getElementById("topic3").innerHTML = "My Facts"
-        document.getElementById("topic4").className = "topicnotmain4"
-        document.getElementById("topic4").innerHTML = "Skill"
-        document.getElementById("parano2").style= "display:block;"
-        document.getElementsByClassName("parano1").style= "display:none;"
-    }
-    function topic4selected(){
-        document.getElementById("topic1").className = "topicnotmain1"
-        document.getElementById("topic1").innerHTML = "Info"
-        document.getElementById("topic2").className = "topicnotmain2"
-        document.getElementById("topic2").innerHTML = "Story"
-        document.getElementById("topic3").className = "topicnotmain3"
-        document.getElementById("topic3").innerHTML = "Facts"
-        document.getElementById("topic4").className = "topicmain4"
-        document.getElementById("topic4").innerHTML = "My Skill"
-        document.getElementById("parano2").style= "display:block;"
-        document.getElementsByClassName("parano1").style= "display:none;"
-    }
+    function btslideback() {
+     document.getElementById('superbiomove').id = "superbiomoveback"
+     document.getElementById('superbiomoveback').onclick = btslideagain
+         }
+     function btslideagain() {
+     document.getElementById('superbiomoveback').id = "superbiomove"
+     document.getElementById('superbiomove').onclick = btslideback
+         }
+     function  presilde() {
+     document.getElementById('superbio').id = "btpreslide"
+     document.getElementById('btpreslide').onclick = btslidesub
+     }
+     function stoppreslide() {
+    document.getElementById('btpreslide').id = "superbio"
+     }
+     function  presildeagain() {
+     document.getElementById('superbiomoveback').id = "btpreslide"
+     document.getElementById('btpreslide').onclick = btslidesub
+     }
+     function stoppreslideagain() {
+        document.getElementById('btpreslide').id = "superbiomoveback"
+     }
+     function bt1ef(){
+        document.getElementById('biobt1').id = "biobt1ef"
+     }
+     function bt1efout(){
+        document.getElementById('biobt1ef').id = "biobt1"
+     }
+     function bt2ef(){
+        document.getElementById('biobt2').id = "biobt2ef"
+     }
+     function bt2efout(){
+        document.getElementById('biobt2ef').id = "biobt2"
+     }
+     function bt3ef(){
+        document.getElementById('biobt3').id = "biobt3ef"
+     }
+     function bt3efout(){
+        document.getElementById('biobt3ef').id = "biobt3"
+     }
+     let popup = document.getElementById('popup');
+     function openPopup(){
+        popup.classList.add("open-popup");
+     }
+     function closePopup(){
+        popup.classList.remove("open-popup");
+     }
+     let biobtn1 = document.getElementById('biobtn1');
+     let biobtn2 = document.getElementById('biobtn2');
+     let biobtn3 = document.getElementById('biobtn3');
+     let biobtn4 = document.getElementById('biobtn4');
+     let bioloble1 = document.getElementById('bioloble1')
+     let bioloble2 = document.getElementById('bioloble2')
+     let bioloble3 = document.getElementById('bioloble3')
+     let bioloble4 = document.getElementById('bioloble4')
+     let cancelbutton = document.getElementById('cancelbutton')
+     let comingsoontxt = document.getElementById('comingsoon-text');
+     function biobtnpopup1() {
+      biobtn1.classList.add("biobtn1popup")
+      bioloble1.style = 'background-color: #d7d7d786;box-shadow: 3px 3px 1px black;'
+     }
+     function biobtnclosepopup1() {
+      biobtn1.classList.remove("biobtn1popup")
+      bioloble1.style = 'background-color:  rgba(255, 255, 255, 0.605)'
+     }
+     function biobtnpopup2() {
+      biobtn2.classList.add("biobtn2popup")
+      bioloble2.style = 'background-color: #d7d7d786;box-shadow: 3px 3px 1px black;'
+     }
+     function biobtnclosepopup2() {
+      biobtn2.classList.remove("biobtn2popup")
+      bioloble2.style = 'background-color:  rgba(255, 255, 255, 0.605);'
+     }
+     function biobtnpopup3() {
+      biobtn3.classList.add("biobtn3popup")
+      bioloble3.style = 'background-color: #d7d7d786;box-shadow: 3px 3px 1px black;'
+     }
+     function biobtnclosepopup3() {
+      biobtn3.classList.remove("biobtn3popup")
+      bioloble3.style = 'background-color:  rgba(255, 255, 255, 0.605);'
+     }
+     function biobtnpopup4() {
+      biobtn4.classList.add("biobtn4popup")
+      bioloble4.style = 'background-color: #d7d7d786;box-shadow: 3px 3px 1px black;'
+     }
+     function biobtnclosepopup4() {
+      biobtn4.classList.remove("biobtn4popup")
+      bioloble4.style = 'background-color:  rgba(255, 255, 255, 0.605);'
+     }
+     let bioloble = document.getElementById('bioloble')
+     function bioloble1popup(){
+      bioloble1.classList.add("bioloble1popup")
+      bioloble.style = 'visibility: hidden;'
+      comingsoontxt.style  = 'visibility: hidden;'
+      setTimeout(() => {
+         bioloble2.classList.add("icon2popup")
+      }, 300);
+      setTimeout(() => {
+         bioloble3.classList.add("bioloble3popup")
+      }, 600);
+      setTimeout(() => {
+         bioloble4.classList.add("bioloble4popup")
+      }, 900);
+      setTimeout(() => {
+         cancelbutton.classList.add("cancelbuttonpopup")
+      }, 1200);
+      popup.classList.remove("open-popup");
+     }
+     function cancel(){
+      bioloble1.classList.remove("bioloble1popup")
+      bioloble2.classList.remove("icon2popup")
+      bioloble3.classList.remove("bioloble3popup")
+      bioloble4.classList.remove("bioloble4popup")
+      cancelbutton.classList.remove("cancelbuttonpopup")
+      bioloble.style = 'visibility: visible;'
+      comingsoontxt.style = 'visibility: visible;'
+     }
+     let popupcomingsoon = document.getElementById('popup-comingsoon')
+     let popupcomingsoon2 = document.getElementById('popup-comingsoon2')
+     function comingsoonpopup(){
+      popupcomingsoon.classList.add("popup-comingsoon-open")
+     }
+     function comingsoonpopupclose(){
+      popupcomingsoon.classList.remove("popup-comingsoon-open")
+     }
+     function comingsoonpopup2(){
+      popupcomingsoon2.classList.add("popup-comingsoon2-open")
+     }
+     function comingsoonpopupclose2(){
+      popupcomingsoon2.classList.remove("popup-comingsoon2-open")
+     }
+   
 </script>
