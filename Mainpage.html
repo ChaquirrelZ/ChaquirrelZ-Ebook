@@ -43,24 +43,42 @@
          <h6>คัมภีร์มหาชีวะ</h6>
          <h1>Pt.2 โมเนอรา</h1>
          <button class="biobtn2" id="biobtn2" ><i class="fa fa-book"></i></button>
-         <div class="hitblock" onclick="document.location='Flipbooktest.html'" onmouseover="biobtnpopup2()" onmouseout="biobtnclosepopup2()"></div>
+         <div class="hitblock" onclick="comingsoonpopup()" onmouseover="biobtnpopup2()" onmouseout="biobtnclosepopup2()"></div>
         </div>
         <div class="bioloble3" id="bioloble3">
          <img src="booktn3.png">
          <h6>คัมภีร์มหาชีวะ</h6>
          <h1>Pt.3 โพรทิสตา</h1>
          <button class="biobtn3" id="biobtn3" ><i class="fa fa-book"></i></button>
-         <div class="hitblock" onclick="document.location='Flipbooktest.html'" onmouseover="biobtnpopup3()" onmouseout="biobtnclosepopup3()"></div>
+         <div class="hitblock" onclick="comingsoonpopup()" onmouseover="biobtnpopup3()" onmouseout="biobtnclosepopup3()"></div>
         </div>
         <div class="bioloble4" id="bioloble4">
          <img src="booktn4.png">
          <h6>คัมภีร์มหาชีวะ</h6>
          <h1>Pt.4 ฟังไจ</h1>
          <button class="biobtn4" id="biobtn4" ><i class="fa fa-book"></i></button>
-         <div class="hitblock" onclick="document.location='Flipbooktest.html'" onmouseover="biobtnpopup4()" onmouseout="biobtnclosepopup4()"></div>
+         <div class="hitblock" onclick="comingsoonpopup()" onmouseover="biobtnpopup4()" onmouseout="biobtnclosepopup4()"></div>
         </div>
         <button class="cancelbutton" id="cancelbutton" onclick="cancel()">X</button>
-    </div>
+        <div class="popup-comingsoon" id="popup-comingsoon">
+         <h1>เนื้อหาจะมาเร็วๆนี้!</h1>
+         <p>อดใจรออีกสักหน่อย!
+         </p>
+         <a href="https://www.clearnotebooks.com/th/authors/6025681?fbclid=PAAaaXfRYzD_8X0hHXS9rAL_QqMSHMAwup9oOeJmdHz12qnzi2jxFVg5TQbTQ_aem_AUHoFYovAOP4EuEfqZqOfOgn6n3_uJQL_ZS41xCDaS1zb8Pl6-7LubG7T5nN11QV46E"><button>ดูใน Clear note</button></a>
+         <img src="X.png" class="comingsooncancel" onclick="comingsoonpopupclose()"><br>
+         <img class="warning" src="Warningsign.png">
+         
+        </div>
+        <h1 id = "comingsoon-text" class="comingsoon-text" onclick="comingsoonpopup2()">COMING SOON</h1>
+        <div class="popup-comingsoon2" id="popup-comingsoon2">
+         <h1>หนังสือใหม่จะมาเร็วๆนี้!</h1>
+         <p>อดใจรออีกสักหน่อย!
+         </p>
+         <img src="X.png" class="comingsooncancel2" onclick="comingsoonpopupclose2()"><br>
+         <img class="warning2" src="Warningsign.png">
+         
+        </div>
+      </div>
     
 
 </body>
@@ -129,6 +147,7 @@
      let bioloble3 = document.getElementById('bioloble3')
      let bioloble4 = document.getElementById('bioloble4')
      let cancelbutton = document.getElementById('cancelbutton')
+     let comingsoontxt = document.getElementById('comingsoon-text');
      function biobtnpopup1() {
       biobtn1.classList.add("biobtn1popup")
       bioloble1.style = 'background-color: #d7d7d786;box-shadow: 3px 3px 1px black;'
@@ -165,6 +184,7 @@
      function bioloble1popup(){
       bioloble1.classList.add("bioloble1popup")
       bioloble.style = 'visibility: hidden;'
+      comingsoontxt.style  = 'visibility: hidden;'
       setTimeout(() => {
          bioloble2.classList.add("icon2popup")
       }, 300);
@@ -186,6 +206,21 @@
       bioloble4.classList.remove("bioloble4popup")
       cancelbutton.classList.remove("cancelbuttonpopup")
       bioloble.style = 'visibility: visible;'
+      comingsoontxt.style = 'visibility: visible;'
+     }
+     let popupcomingsoon = document.getElementById('popup-comingsoon')
+     let popupcomingsoon2 = document.getElementById('popup-comingsoon2')
+     function comingsoonpopup(){
+      popupcomingsoon.classList.add("popup-comingsoon-open")
+     }
+     function comingsoonpopupclose(){
+      popupcomingsoon.classList.remove("popup-comingsoon-open")
+     }
+     function comingsoonpopup2(){
+      popupcomingsoon2.classList.add("popup-comingsoon2-open")
+     }
+     function comingsoonpopupclose2(){
+      popupcomingsoon2.classList.remove("popup-comingsoon2-open")
      }
    
 </script>
