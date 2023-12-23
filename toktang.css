@@ -343,6 +343,7 @@ body{
     font-size: 25px;
     top: -50px;
     position: relative;
+       color:red;
    }
    .popup p{
     font-size: 15px;
